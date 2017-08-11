@@ -41,9 +41,7 @@ SWEP.IsSilent = false
 SWEP.NoSights = false
 
 function SWEP:SetZoom( state )
-   if CLIENT then
-      return
-   elseif IsValid( self.Owner ) and self.Owner:IsPlayer() then
+   if IsValid( self.Owner ) and self.Owner:IsPlayer() then
       if state then
          self.Owner:SetFOV( 20, 0.3 )
       else
@@ -64,10 +62,9 @@ function SWEP:SecondaryAttack()
    local bIronsights = not self:GetIronsights()
 
    self:SetIronsights( bIronsights )
-
-   if SERVER then
-      self:SetZoom( bIronsights )
-   else
+   self:SetZoom( bIronsights )
+   
+   if CLIENT then
       self:EmitSound( self.Secondary.Sound )
    end
 
