@@ -2,7 +2,7 @@ AddCSLuaFile()
 
 if CLIENT then
    SWEP.PrintName = "AK47"
-   SWEP.Slot = 6
+   SWEP.Slot = 2
    SWEP.Icon = "vgui/ttt/icon_ak47"
    SWEP.IconLetter = "b"
 end
@@ -30,10 +30,9 @@ SWEP.WorldModel = Model( "models/weapons/w_rif_ak47.mdl" )
 SWEP.IronSightsPos = Vector( -6.518, -4.646, 2.134 )
 SWEP.IronSightsAng = Vector( 2.737, 0.158, 0 )
 
-SWEP.Kind = WEAPON_EQUIP1
-SWEP.AutoSpawnable = false
+SWEP.Kind = WEAPON_HEAVY
+SWEP.AutoSpawnable = true
 SWEP.AmmoEnt = "item_ammo_smg1_ttt"
-SWEP.CanBuy = { ROLE_TRAITOR }
 SWEP.InLoadoutFor = { nil }
 SWEP.LimitedStock = true
 SWEP.AllowDrop = true

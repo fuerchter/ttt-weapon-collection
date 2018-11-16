@@ -2,7 +2,7 @@ AddCSLuaFile()
 
 if CLIENT then
    SWEP.PrintName = "Silent Fox"
-   SWEP.Slot = 6
+   SWEP.Slot = 2
    SWEP.Icon = "vgui/ttt/icon_tmp"
    SWEP.IconLetter = "d"
 end
@@ -30,10 +30,9 @@ SWEP.WorldModel = Model( "models/weapons/w_smg_tmp.mdl" )
 SWEP.IronSightsPos = Vector ( -6.896, -2.822, 2.134 )
 SWEP.IronSightsAng = Vector ( 2.253, 0.209, 0.07 )
 
-SWEP.Kind = WEAPON_EQUIP1
-SWEP.AutoSpawnable = false
+SWEP.Kind = WEAPON_HEAVY
+SWEP.AutoSpawnable = true
 SWEP.AmmoEnt = "item_ammo_pistol_ttt"
-SWEP.CanBuy = { ROLE_TRAITOR }
 SWEP.InLoadoutFor = { nil }
 SWEP.LimitedStock = true
 SWEP.AllowDrop = true

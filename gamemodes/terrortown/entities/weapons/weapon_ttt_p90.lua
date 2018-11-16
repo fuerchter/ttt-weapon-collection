@@ -2,7 +2,7 @@ AddCSLuaFile()
 
 if CLIENT then
    SWEP.PrintName = "FN P90"
-   SWEP.Slot = 6
+   SWEP.Slot = 2
    SWEP.Icon = "vgui/ttt/icon_p90"
    SWEP.IconLetter = "m"
 end
@@ -31,10 +31,9 @@ SWEP.WorldModel = Model( "models/weapons/w_smg_p90.mdl" )
 SWEP.IronSightsPos = Vector( 5, -15, -2 )
 SWEP.IronSightsAng = Vector( 2.6, 1.37, 3.5 )
 
-SWEP.Kind = WEAPON_EQUIP1
-SWEP.AutoSpawnable = false
+SWEP.Kind = WEAPON_HEAVY
+SWEP.AutoSpawnable = true
 SWEP.AmmoEnt = "item_ammo_smg1_ttt"
-SWEP.CanBuy = { ROLE_DETECTIVE }
 SWEP.InLoadoutFor = { nil }
 SWEP.LimitedStock = true
 SWEP.AllowDrop = true
